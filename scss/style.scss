@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+@import "./fonts";
+@import "./variables";
+/* Components */
+@import "./component/header";
+@import "./component/bienvenida";
+@import "./component/historia";
+@import "./component/discografia";
+@import "./component/galeria";
+@import "./component/contacto";
+@import "./component/footer";
+@import "./component/mqueries";
+
+
+/*# sourceMappingURL=style.css.map */

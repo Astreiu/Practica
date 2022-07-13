@@ -1,0 +1,39 @@
+/* INICIO */
+.hero{
+    background-image: url(../multimedia/images/sonatafondo.png);
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.textoimagen{
+    width: 50%;
+    font-family: $font-textos;
+    font-weight: 400;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin: 22px 0;
+
+    @media only screen and (max-width: 991px){
+        width: 85%;
+    }
+}
+
+.section-carousel{
+    h2{
+        margin-bottom: 20px;
+        padding: 50px 0 25px;
+        color: black;
+        font-family: $font-titulos;
+        font-size: 3rem;
+        text-align: center;
+    }
+    img{
+        object-fit: cover;
+    }
+}

@@ -1,22 +1,229 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* tipografias */
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swap');
+/* familia tipográfica: 'Roboto', sans-serif; */
+
+/* Imports archivos */
+@import 'base/variables';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/inicio';
+
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+.boton{
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: $bg-color-principal;
+    font-family: $font-textos;
+    font-weight: 300;
+    color: white;
+    font-size: 23px;
+    margin: 25px 0 120px 0;
+    transition: 0.3s;
 
-@import "./fonts";
-@import "./variables";
-/* Components */
-@import "./component/header";
-@import "./component/bienvenida";
-@import "./component/historia";
-@import "./component/discografia";
-@import "./component/galeria";
-@import "./component/contacto";
-@import "./component/footer";
-@import "./component/mqueries";
+    &:hover{
+        transform: scale(1.03);
+        color: black;
+        color: white;
+    }
+}
+ 
+.historia, .galeria{
+    display: flex;
+    width: 100%;
+}
+
+.historia {
+    margin: auto;
+    padding: 35px 0 25px;
+    color: black;
+    font-family: $font-titulos;
+    font-size: 40px;
+    text-align: center;
+
+    @media only screen and (max-width: 991px){
+        margin: 0 0 20px 0;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .fila-galeria, .fila-historia{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.imagenhistoria, .imagengaleria{
+    object-fit: cover;
+    width: 100%;
+}
+
+.historia h1, .galeria h1{
+    margin: 40px 60px;
+    font-family: $font-titulos;
+    font-size: 40px;
+
+    @media only screen and (max-width: 991px){
+        margin: 0 0 20px 0;
+    }
+}
 
 
-/*# sourceMappingURL=style.css.map */
+.historia p, .galeria p{ 
+    margin: 0px 60px;
+    font-family: $font-textos;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: justify;
+    width: 70%;
+    
+    @media only screen and (max-width: 991px){
+        margin:0 0 30px 0 ;
+        width: 100%;
+    }
+}
+
+/* DISCOGRAFIA */
+
+.catalogo h1, .contacto h1 {
+    margin: auto;
+    padding: 35px 0 25px;
+    color: black;
+    font-family: $font-titulos;
+    font-size: 40px;
+    text-align: center;
+}
+
+.catalogo p, .contacto p, .section-carousel p{
+    margin: auto;
+    width: 50%;
+    padding-bottom: 50px;
+    color: black;
+    font-family: $font-textos;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+
+    @media only screen and (max-width: 991px){
+        width: 75%;
+    }
+}
+
+.grid-catalogo-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-textos;
+    margin: 22px 0;
+
+    img{
+        width: 85%;
+        transition: 0.2s;
+    
+        @media only screen and (max-width: 991px){
+            width: 70%;
+        }
+    
+        &:hover{
+            transform: scale(1.01);
+        }
+    }
+
+    h3{
+        font-size: 20px;
+        margin: 12px 0 4px 0;
+    }
+}
+
+
+.botonvolverarriba{
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 35px 0;
+
+    a{
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: white;
+        font-size: 20px;
+        transition: 0.2s;
+
+    &:hover{
+        transform: scale(1.03);
+        color: $color-secundario
+    }
+    }
+}
+
+.botoncomprar{
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 35px 0;
+
+    a{
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: white;
+        font-size: 20px;
+        transition: 0.2s;
+
+    &:hover{
+        transform: scale(1.03);
+        color: $color-secundario
+    }
+    }
+}
+
+/* CONTACTO */
+
+.datos-contacto{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 35px 0;
+
+    div{
+        display: flex;
+        align-items: center;
+    }
+
+    p{
+        font-family: $font-textos;
+        font-weight: 300;
+        color: black;
+        font-size: 19px;
+        margin: 0px;
+    }
+
+    img{
+        width: 20px;
+        margin: 10px;
+    }
+}
+
+.boton-contacto{
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: $bg-color-principal;
+    font-family: $font-textos;
+    font-weight: 300;
+    color: white;
+    font-size: 15px;
+    margin: 25px 0 40px 0;
+    transition: 0.3s;
+
+    &:hover{
+        transform: scale(1.03);
+        color: $color-secundario
+    }
+}

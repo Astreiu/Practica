@@ -6,9 +6,9 @@
 .cabecera {
   background-color: black;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .cabecera div a img {
-    width: 140px;
+    width: 120px;
   }
 }
 
@@ -55,79 +55,6 @@
   transition: 0.5s;
 }
 
-.footer-container {
-  background-color: black;
-}
-
-.footer-grid {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-@media only screen and (max-width: 991px) {
-  .footer-grid {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-.footer-grid div {
-  display: flex;
-  align-items: center;
-}
-
-.redes a img:hover {
-  transform: scale(1.13);
-  transition: 0.3s;
-}
-
-.redes {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 40px;
-}
-@media only screen and (max-width: 991px) {
-  .redes {
-    display: flex;
-    justify-content: center;
-    padding: 0px;
-  }
-}
-
-.logoalternativo {
-  display: flex;
-  justify-content: center;
-}
-.logoalternativo img {
-  width: 160px;
-}
-@media only screen and (max-width: 991px) {
-  .logoalternativo img {
-    width: 120px;
-    margin: 22px 0px 15px 0;
-  }
-}
-
-.ubicacion {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 40px;
-}
-@media only screen and (max-width: 991px) {
-  .ubicacion {
-    display: flex;
-    justify-content: center;
-    padding: 0px;
-  }
-}
-
-.p-ubicacion {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 300;
-  color: white;
-  margin-bottom: 0px;
-}
-
 /* INICIO */
 .hero {
   background-image: url(../multimedia/images/sonatafondo.png);
@@ -166,6 +93,102 @@
   object-fit: cover;
 }
 
+.footer-container {
+  background-color: black;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+@media only screen and (max-width: 980px) {
+  .footer-grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.footer-grid div {
+  display: flex;
+  align-items: center;
+}
+
+.redes a img:hover {
+  transform: scale(1.13);
+  transition: 0.3s;
+}
+
+.redes {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+@media only screen and (max-width: 980px) {
+  .redes {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .redes a img {
+    width: 35px;
+  }
+}
+
+.logoalternativo {
+  display: flex;
+  justify-content: center;
+}
+.logoalternativo img {
+  width: 160px;
+}
+@media only screen and (max-width: 980px) {
+  .logoalternativo img {
+    width: 100px;
+    margin: 22px 0px 15px 0;
+  }
+}
+
+.ubicacion {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+@media only screen and (max-width: 980px) {
+  .ubicacion {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+}
+
+.p-ubicacion {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 0px;
+}
+@media only screen and (max-width: 768px) {
+  .p-ubicacion {
+    font-size: 12px;
+  }
+}
+
+/* BOTONES */
+.botoncomprar a, .botonvolverarriba a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+/* FIN BOTONES */
 * {
   margin: 0;
   padding: 0;
@@ -183,14 +206,12 @@
   transition: 0.3s;
 }
 .boton:hover {
+  -webkit-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  -moz-transform: scale(1.03);
   transform: scale(1.03);
   color: black;
   color: white;
-}
-
-.historia, .galeria {
-  display: flex;
-  width: 100%;
 }
 
 .historia {
@@ -201,52 +222,68 @@
   font-size: 40px;
   text-align: center;
 }
-@media only screen and (max-width: 991px) {
-  .historia {
-    margin: 0 0 20px 0;
-  }
-}
 
-@media only screen and (max-width: 991px) {
-  .fila-galeria, .fila-historia {
+@media only screen and (max-width: 780px) {
+  .fila-historia-2 {
     display: flex;
     flex-direction: column-reverse;
   }
 }
-.imagenhistoria, .imagengaleria {
-  object-fit: cover;
-  width: 100%;
-}
-
-.historia h1, .galeria h1 {
+.historia h1,
+.galeria h1 {
   margin: 40px 60px;
   font-family: "Roboto", sans-serif;
   font-size: 40px;
 }
-@media only screen and (max-width: 991px) {
-  .historia h1, .galeria h1 {
-    margin: 0 0 20px 0;
-  }
-}
 
-.historia p, .galeria p {
+.historia p,
+.historia-2 p,
+.galeria p {
   margin: 0px 60px;
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 300;
   line-height: 35px;
   text-align: justify;
-  width: 70%;
 }
-@media only screen and (max-width: 991px) {
-  .historia p, .galeria p {
-    margin: 0 0 30px 0;
-    width: 100%;
+@media only screen and (max-width: 800px) {
+  .historia p,
+.historia-2 p,
+.galeria p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .historia p,
+.historia-2 p,
+.galeria p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.imagenhistoria,
+.imagenhistoria-2 {
+  object-fit: cover;
+  width: 100%;
+}
+@media only screen and (max-width: 800px) {
+  .imagenhistoria,
+.imagenhistoria-2 {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .imagenhistoria,
+.imagenhistoria-2 {
+    width: 80%;
   }
 }
 
 /* DISCOGRAFIA */
-.catalogo h1, .contacto h1 {
+.catalogo h1,
+.contacto h1 {
   margin: auto;
   padding: 35px 0 25px;
   color: black;
@@ -255,7 +292,9 @@
   text-align: center;
 }
 
-.catalogo p, .contacto p, .section-carousel p {
+.catalogo p,
+.contacto p,
+.section-carousel p {
   margin: auto;
   width: 50%;
   padding-bottom: 50px;
@@ -266,7 +305,9 @@
   text-align: center;
 }
 @media only screen and (max-width: 991px) {
-  .catalogo p, .contacto p, .section-carousel p {
+  .catalogo p,
+.contacto p,
+.section-carousel p {
     width: 75%;
   }
 }
@@ -300,16 +341,6 @@
   justify-content: center;
   margin: 35px 0 35px 0;
 }
-.botonvolverarriba a {
-  text-decoration: none;
-  padding: 10px 20px;
-  background-color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: white;
-  font-size: 20px;
-  transition: 0.2s;
-}
 .botonvolverarriba a:hover {
   transform: scale(1.03);
   color: #5dc1b9;
@@ -320,22 +351,16 @@
   justify-content: center;
   margin: 35px 0 35px 0;
 }
-.botoncomprar a {
-  text-decoration: none;
-  padding: 10px 20px;
-  background-color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: white;
-  font-size: 20px;
-  transition: 0.2s;
-}
 .botoncomprar a:hover {
   transform: scale(1.03);
   color: #5dc1b9;
 }
 
 /* CONTACTO */
+.formulario-contacto {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .datos-contacto {
   display: flex;
   flex-direction: column;

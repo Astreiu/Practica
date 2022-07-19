@@ -1,0 +1,57 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.maincatalogo {
+  .catalogo {
+    .galeria-titulo {
+      margin-bottom: 20px;
+      padding: 50px 0 25px;
+      color: black;
+      font-family: $font-titulos;
+      font-size: 3rem;
+      text-align: center;
+
+      @media only screen and (max-width: 800px) {
+        font-size: 2rem;
+        font-weight: bolder;
+      }
+
+      @media only screen and (max-width: 400px) {
+        font-size: 1rem;
+        font-weight: bolder;
+      }
+    }
+    p {
+      margin: 0px 60px;
+      padding: 25px;
+      font-family: $font-textos;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 35px;
+      text-align: center;
+      @media only screen and (max-width: 800px) {
+        font-size: 16px;
+        line-height: 25px;
+      }
+
+      @media only screen and (max-width: 400px) {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.botonvolverarriba {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0 35px 0;
+
+  a {
+    @extend %boton;
+    &:hover {
+      transform: scale(1.03);
+      color: $color-secundario;
+    }
+  }
+}

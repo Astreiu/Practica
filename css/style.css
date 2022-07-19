@@ -1,13 +1,21 @@
 @charset "UTF-8";
-/* tipografias */
 @import url("https://fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swap");
-/* familia tipográfica: 'Roboto', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* tipografias - familia tipográfica: 'Roboto', sans-serif; */
 /* Imports archivos */
 .cabecera {
   background-color: black;
 }
+.cabecera div a .logoprincipal:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
 @media only screen and (max-width: 600px) {
-  .cabecera div a img {
+  .cabecera div a .logoprincipal:hover {
     width: 120px;
   }
 }
@@ -50,11 +58,6 @@
   color: #5dc1b9;
 }
 
-.logoprincipal:hover {
-  transform: scale(1.02);
-  transition: 0.5s;
-}
-
 /* INICIO */
 .hero {
   background-image: url(../multimedia/images/sonatafondo.png);
@@ -65,8 +68,7 @@
   justify-content: flex-end;
   align-items: center;
 }
-
-.textoimagen {
+.hero .textoimagen {
   width: 50%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -76,12 +78,31 @@
   margin: 22px 0;
 }
 @media only screen and (max-width: 991px) {
-  .textoimagen {
+  .hero .textoimagen {
     width: 85%;
   }
 }
+.hero .boton {
+  text-decoration: none;
+  padding: 12px 20px;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 23px;
+  margin: 25px 0 120px 0;
+  transition: 0.3s;
+}
+.hero .boton:hover {
+  -webkit-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  transform: scale(1.03);
+  color: black;
+  color: white;
+}
 
-.section-carousel h2 {
+.section-carousel .inicio-titulo {
   margin-bottom: 20px;
   padding: 50px 0 25px;
   color: black;
@@ -89,8 +110,373 @@
   font-size: 3rem;
   text-align: center;
 }
+@media only screen and (max-width: 800px) {
+  .section-carousel .inicio-titulo {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .section-carousel .inicio-titulo {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+}
+.section-carousel p {
+  margin: 0px 60px;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 35px;
+  text-align: justify;
+}
+@media only screen and (max-width: 800px) {
+  .section-carousel p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .section-carousel p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
 .section-carousel img {
+  padding: 50px 0 25px;
   object-fit: cover;
+}
+
+.botonvolverarriba {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0 35px 0;
+}
+.botonvolverarriba a:hover {
+  transform: scale(1.03);
+  color: #5dc1b9;
+}
+
+.historia-arriba {
+  margin: auto;
+  padding: 35px 0 25px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+.historia-arriba .imagenhistoria {
+  object-fit: cover;
+  width: 100%;
+}
+@media only screen and (max-width: 800px) {
+  .historia-arriba .imagenhistoria {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .historia-arriba .imagenhistoria {
+    width: 80%;
+  }
+}
+.historia-arriba .historia-titulo {
+  margin: 40px 60px;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+@media only screen and (max-width: 800px) {
+  .historia-arriba .historia-titulo {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .historia-arriba .historia-titulo {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+}
+.historia-arriba p {
+  margin: 0px 60px;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 35px;
+  text-align: justify;
+}
+@media only screen and (max-width: 800px) {
+  .historia-arriba p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .historia-arriba p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.historia-abajo {
+  margin: auto;
+  padding: 35px 0 25px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+.historia-abajo .imagenhistoria-2 {
+  object-fit: cover;
+  width: 100%;
+}
+@media only screen and (max-width: 800px) {
+  .historia-abajo .imagenhistoria-2 {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .historia-abajo .imagenhistoria-2 {
+    width: 80%;
+  }
+}
+.historia-abajo p {
+  margin: 0px 60px;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 35px;
+  text-align: justify;
+}
+@media only screen and (max-width: 800px) {
+  .historia-abajo p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .historia-abajo p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.maincatalogo .catalogo .discografia-titulo {
+  margin-bottom: 20px;
+  padding: 50px 0 25px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+@media only screen and (max-width: 800px) {
+  .maincatalogo .catalogo .discografia-titulo {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .maincatalogo .catalogo .discografia-titulo {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+}
+.maincatalogo .catalogo p {
+  margin: 0px 60px;
+  padding: 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 35px;
+  text-align: center;
+}
+@media only screen and (max-width: 800px) {
+  .maincatalogo .catalogo p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .maincatalogo .catalogo p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.grid-catalogo-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  margin: 22px 0;
+}
+.grid-catalogo-items img {
+  width: 85%;
+  transition: 0.2s;
+}
+@media only screen and (max-width: 991px) {
+  .grid-catalogo-items img {
+    width: 70%;
+  }
+}
+.grid-catalogo-items img:hover {
+  transform: scale(1.01);
+}
+.grid-catalogo-items h3 {
+  font-size: 20px;
+  margin: 12px 0 4px 0;
+}
+.grid-catalogo-items .botoncomprar {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0 35px 0;
+}
+.grid-catalogo-items .botoncomprar a:hover {
+  transform: scale(1.03);
+  color: #5dc1b9;
+}
+
+.botonvolverarriba {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0 35px 0;
+}
+.botonvolverarriba a:hover {
+  transform: scale(1.03);
+  color: #5dc1b9;
+}
+
+.maincatalogo .catalogo .galeria-titulo {
+  margin-bottom: 20px;
+  padding: 50px 0 25px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+@media only screen and (max-width: 800px) {
+  .maincatalogo .catalogo .galeria-titulo {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .maincatalogo .catalogo .galeria-titulo {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+}
+.maincatalogo .catalogo p {
+  margin: 0px 60px;
+  padding: 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 35px;
+  text-align: center;
+}
+@media only screen and (max-width: 800px) {
+  .maincatalogo .catalogo p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .maincatalogo .catalogo p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.botonvolverarriba {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0 35px 0;
+}
+.botonvolverarriba a:hover {
+  transform: scale(1.03);
+  color: #5dc1b9;
+}
+
+.contacto .contacto-titulo {
+  margin-bottom: 20px;
+  padding: 50px 0 25px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+@media only screen and (max-width: 800px) {
+  .contacto .contacto-titulo {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contacto .contacto-titulo {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+}
+.contacto p {
+  margin: 0px 60px;
+  padding: 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 35px;
+  text-align: center;
+}
+@media only screen and (max-width: 800px) {
+  .contacto p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contacto p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.formulario-contacto {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.formulario-contacto .datos-contacto {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 35px 0;
+}
+.formulario-contacto .datos-contacto div {
+  display: flex;
+  align-items: center;
+}
+.formulario-contacto .datos-contacto p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: black;
+  font-size: 19px;
+  margin: 0px;
+}
+.formulario-contacto .datos-contacto img {
+  width: 20px;
+  margin: 10px;
+}
+
+.boton-contacto {
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 15px;
+  margin: 25px 0 40px 0;
+  transition: 0.3s;
+}
+.boton-contacto:hover {
+  transform: scale(1.03);
+  color: #5dc1b9;
 }
 
 .footer-container {
@@ -177,7 +563,7 @@
 }
 
 /* BOTONES */
-.botoncomprar a, .botonvolverarriba a {
+.botonvolverarriba a, .grid-catalogo-items .botoncomprar a {
   text-decoration: none;
   padding: 10px 20px;
   background-color: black;
@@ -189,213 +575,5 @@
 }
 
 /* FIN BOTONES */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.boton {
-  text-decoration: none;
-  padding: 12px 20px;
-  background-color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: white;
-  font-size: 23px;
-  margin: 25px 0 120px 0;
-  transition: 0.3s;
-}
-.boton:hover {
-  -webkit-transform: scale(1.03);
-  -o-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  transform: scale(1.03);
-  color: black;
-  color: white;
-}
-
-.historia {
-  margin: auto;
-  padding: 35px 0 25px;
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-  text-align: center;
-}
-
-@media only screen and (max-width: 780px) {
-  .fila-historia-2 {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-.historia h1,
-.galeria h1 {
-  margin: 40px 60px;
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-}
-
-.historia p,
-.historia-2 p,
-.galeria p {
-  margin: 0px 60px;
-  font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 35px;
-  text-align: justify;
-}
-@media only screen and (max-width: 800px) {
-  .historia p,
-.historia-2 p,
-.galeria p {
-    font-size: 16px;
-    line-height: 25px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .historia p,
-.historia-2 p,
-.galeria p {
-    font-size: 12px;
-    line-height: 20px;
-  }
-}
-
-.imagenhistoria,
-.imagenhistoria-2 {
-  object-fit: cover;
-  width: 100%;
-}
-@media only screen and (max-width: 800px) {
-  .imagenhistoria,
-.imagenhistoria-2 {
-    width: 80%;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .imagenhistoria,
-.imagenhistoria-2 {
-    width: 80%;
-  }
-}
-
-/* DISCOGRAFIA */
-.catalogo h1,
-.contacto h1 {
-  margin: auto;
-  padding: 35px 0 25px;
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-  text-align: center;
-}
-
-.catalogo p,
-.contacto p,
-.section-carousel p {
-  margin: auto;
-  width: 50%;
-  padding-bottom: 50px;
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 22px;
-  text-align: center;
-}
-@media only screen and (max-width: 991px) {
-  .catalogo p,
-.contacto p,
-.section-carousel p {
-    width: 75%;
-  }
-}
-
-.grid-catalogo-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-  margin: 22px 0;
-}
-.grid-catalogo-items img {
-  width: 85%;
-  transition: 0.2s;
-}
-@media only screen and (max-width: 991px) {
-  .grid-catalogo-items img {
-    width: 70%;
-  }
-}
-.grid-catalogo-items img:hover {
-  transform: scale(1.01);
-}
-.grid-catalogo-items h3 {
-  font-size: 20px;
-  margin: 12px 0 4px 0;
-}
-
-.botonvolverarriba {
-  display: flex;
-  justify-content: center;
-  margin: 35px 0 35px 0;
-}
-.botonvolverarriba a:hover {
-  transform: scale(1.03);
-  color: #5dc1b9;
-}
-
-.botoncomprar {
-  display: flex;
-  justify-content: center;
-  margin: 35px 0 35px 0;
-}
-.botoncomprar a:hover {
-  transform: scale(1.03);
-  color: #5dc1b9;
-}
-
-/* CONTACTO */
-.formulario-contacto {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.datos-contacto {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0 35px 0;
-}
-.datos-contacto div {
-  display: flex;
-  align-items: center;
-}
-.datos-contacto p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: black;
-  font-size: 19px;
-  margin: 0px;
-}
-.datos-contacto img {
-  width: 20px;
-  margin: 10px;
-}
-
-.boton-contacto {
-  text-decoration: none;
-  padding: 8px 15px;
-  background-color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: white;
-  font-size: 15px;
-  margin: 25px 0 40px 0;
-  transition: 0.3s;
-}
-.boton-contacto:hover {
-  transform: scale(1.03);
-  color: #5dc1b9;
-}
 
 /*# sourceMappingURL=style.css.map */

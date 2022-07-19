@@ -1,0 +1,89 @@
+@import "../base/variables";
+@import "../base/mixins";
+@import "../base/mapas";
+
+.contacto {
+  .contacto-titulo {
+    margin-bottom: 20px;
+    padding: 50px 0 25px;
+    color: black;
+    font-family: $font-titulos;
+    font-size: 3rem;
+    text-align: center;
+
+    @media only screen and (max-width: 800px) {
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+
+    @media only screen and (max-width: 400px) {
+      font-size: 1rem;
+      font-weight: bolder;
+    }
+  }
+
+  p {
+    margin: 0px 60px;
+    padding: 25px;
+    font-family: $font-textos;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: center;
+    @media only screen and (max-width: 800px) {
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
+.formulario-contacto {
+    background-color: map-get($premium, fondo-premium);
+    .datos-contacto {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 35px 0;
+      
+        div {
+          display: flex;
+          align-items: center;
+        }
+      
+        p {
+          font-family: $font-textos;
+          font-weight: 300;
+          color: black;
+          font-size: 19px;
+          margin: 0px;
+        }
+      
+        img {
+          width: 20px;
+          margin: 10px;
+        }
+      }
+}
+
+
+
+.boton-contacto {
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: $bg-color-principal;
+    font-family: $font-textos;
+    font-weight: 300;
+    color: white;
+    font-size: 15px;
+    margin: 25px 0 40px 0;
+    transition: 0.3s;
+  
+    &:hover {
+      transform: scale(1.03);
+      color: $color-secundario;
+    }
+  }

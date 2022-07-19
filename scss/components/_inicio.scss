@@ -1,16 +1,18 @@
+@import "../base/variables";
+@import "../base/mixins";
+
 /* INICIO */
-.hero{
-    background-image: url(../multimedia/images/sonatafondo.png);
-    background-size: cover;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
 
-}
+.hero {
+  background-image: url(../multimedia/images/sonatafondo.png);
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 
-.textoimagen{
+  .textoimagen {
     width: 50%;
     font-family: $font-textos;
     font-weight: 400;
@@ -19,21 +21,82 @@
     text-align: center;
     margin: 22px 0;
 
-    @media only screen and (max-width: 991px){
-        width: 85%;
+    @media only screen and (max-width: 991px) {
+      width: 85%;
     }
+  }
+  .boton {
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: $bg-color-principal;
+    font-family: $font-textos;
+    font-weight: 300;
+    color: white;
+    font-size: 23px;
+    margin: 25px 0 120px 0;
+    transition: 0.3s;
+
+    &:hover {
+      @include animacion(scale(1.03));
+      color: black;
+      color: white;
+    }
+  }
 }
 
-.section-carousel{
-    h2{
-        margin-bottom: 20px;
-        padding: 50px 0 25px;
-        color: black;
-        font-family: $font-titulos;
-        font-size: 3rem;
-        text-align: center;
+.section-carousel {
+  .inicio-titulo {
+    margin-bottom: 20px;
+    padding: 50px 0 25px;
+    color: black;
+    font-family: $font-titulos;
+    font-size: 3rem;
+    text-align: center;
+
+    @media only screen and (max-width: 800px) {
+        font-size: 2rem;
+        font-weight: bolder;
     }
-    img{
-        object-fit: cover;
+
+    @media only screen and (max-width: 400px) {
+        font-size: 1rem;
+        font-weight: bolder;
     }
+  }
+  p {
+    margin: 0px 60px;
+    font-family: $font-textos;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: justify;
+    @media only screen and (max-width: 800px) {
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  img {
+    padding: 50px 0 25px;
+    object-fit: cover;
+  }
 }
+
+.botonvolverarriba {
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 35px 0;
+  
+    a {
+      @extend %boton;
+      &:hover {
+        transform: scale(1.03);
+        color: $color-secundario;
+      }
+    }
+  }

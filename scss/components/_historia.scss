@@ -1,5 +1,4 @@
 @import "../base/variables";
-@import "../base/mixins";
 
 .historia-arriba {
   margin: auto;
@@ -8,15 +7,12 @@
   font-family: $font-titulos;
   font-size: 40px;
   text-align: center;
+  width: 100%;
 
   .imagenhistoria {
     object-fit: cover;
     width: 100%;
-    @media only screen and (max-width: 800px) {
-      width: 80%;
-    }
-
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 990px) {
       width: 80%;
     }
   }
@@ -62,16 +58,14 @@
   font-family: $font-titulos;
   font-size: 40px;
   text-align: center;
+  width: 100%;
 
   .imagenhistoria-2 {
     object-fit: cover;
     width: 100%;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 990px) {
       width: 80%;
-    }
-
-    @media only screen and (max-width: 400px) {
-      width: 80%;
+      padding-bottom: 5rem;
     }
   }
 

@@ -43,7 +43,9 @@
 }
 
 .formulario-contacto {
+  @media only screen and (max-width: 400px) {
     background-color: map-get($premium, fondo-premium);
+  }
     .datos-contacto {
         display: flex;
         flex-direction: column;

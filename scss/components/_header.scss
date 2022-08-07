@@ -1,56 +1,67 @@
 @import "../base/variables";
-@import "../base/mixins";
 
 .cabecera {
   background-color: black;
-  div {
-    a {
+  .container-fluid {
+    .navbar-brand {
+      .logoprincipal {
+        
+        @media only screen and (max-width: 1100px) {
+          width: 180px;
+        }
+        
+        @media only screen and (max-width: 430px) {
+          width: 160px;
+        }
+      }
       .logoprincipal:hover {
         transform: scale(1.02);
         transition: 0.5s;
+      }
+    }
 
-        @media only screen and (max-width: 600px) {
-          width: 120px;
+    .menu {
+      margin-right: 2%;
+      width: 100%;
+      
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+
+        @media only screen and (max-width: 1200px) {
+          font-size: 1.4rem;
+        }
+
+        @media only screen and (max-width: 1100px) {
+          font-size: 1.3rem;
+        }
+    
+        li {
+          list-style-type: none;
+          transition: 0.5s;
+    
+          &:hover {
+            transform: scale(1.08);
+          }
+    
+          a {
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+    
+            &:hover {
+              color: $color-secundario;
+            }
+          }
         }
       }
     }
   }
 }
 
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 2%;
-  width: 100%;
 
-  @media only screen and (max-width: 991px) {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
-
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1.5rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    letter-spacing: 1px;
-    li {
-      list-style-type: none;
-      transition: 0.5s;
-      &:hover {
-        transform: scale(1.08);
-      }
-      a {
-        text-align: center;
-        color: white;
-        text-decoration: none;
-        margin: 0 20px;
-        &:hover {
-          color: $color-secundario;
-        }
-      }
-    }
-  }
-}

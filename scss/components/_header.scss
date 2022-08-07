@@ -5,11 +5,10 @@
   .container-fluid {
     .navbar-brand {
       .logoprincipal {
-        
         @media only screen and (max-width: 1100px) {
           width: 180px;
         }
-        
+
         @media only screen and (max-width: 430px) {
           width: 160px;
         }
@@ -21,9 +20,15 @@
     }
 
     .menu {
+      justify-content: flex-end;
       margin-right: 2%;
       width: 100%;
-      
+
+      @media only screen and (max-width: 991px) {
+        justify-content: center;
+        margin: auto;
+      }
+
       ul {
         display: flex;
         flex-wrap: wrap;
@@ -39,21 +44,21 @@
         @media only screen and (max-width: 1100px) {
           font-size: 1.3rem;
         }
-    
+
         li {
           list-style-type: none;
           transition: 0.5s;
-    
+
           &:hover {
             transform: scale(1.08);
           }
-    
+
           a {
             text-align: center;
             color: white;
             text-decoration: none;
             margin: 0 20px;
-    
+
             &:hover {
               color: $color-secundario;
             }
@@ -63,5 +68,3 @@
     }
   }
 }
-
-

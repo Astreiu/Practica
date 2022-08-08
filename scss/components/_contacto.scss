@@ -64,6 +64,15 @@
           color: black;
           font-size: 19px;
           margin: 0px;
+        
+          @media only screen and (max-width: 800px) {
+            font-size: 16px;
+          }
+      
+          @media only screen and (max-width: 400px) {
+            font-size: 14px;
+          }
+
         }
       
         img {
@@ -85,7 +94,7 @@
     font-size: 15px;
     margin: 25px 0 40px 0;
     transition: 0.3s;
-  
+
     &:hover {
       transform: scale(1.03);
       color: $color-secundario;

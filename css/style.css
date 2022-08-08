@@ -121,12 +121,12 @@
 }
 @media only screen and (max-width: 800px) {
   .hero .boton {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 450px) {
   .hero .boton {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 .hero .boton:hover {

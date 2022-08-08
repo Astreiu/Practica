@@ -1,0 +1,101 @@
+@import "../base/variables";
+
+/* SECCION DISCOGRAFIA */
+
+.maincatalogo {
+  .catalogo {
+    .discografia-titulo {
+        margin-bottom: 20px;
+        padding: 50px 0 25px;
+        color: black;
+        font-family: $font-titulos;
+        font-size: 3rem;
+        text-align: center;
+    
+        @media only screen and (max-width: 800px) {
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+    
+        @media only screen and (max-width: 400px) {
+            font-size: 1rem;
+            font-weight: bolder;
+        }
+      }
+      p {
+        margin: 0px 60px;
+        padding: 25px;
+        font-family: $font-textos;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 35px;
+        text-align: center;
+        @media only screen and (max-width: 800px) {
+          font-size: 16px;
+          line-height: 25px;
+        }
+    
+        @media only screen and (max-width: 400px) {
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+}
+}
+
+.grid-catalogo-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $font-textos;
+  margin: 22px 0;
+
+  img {
+    width: 85%;
+    transition: 0.2s;
+
+    @media only screen and (max-width: 991px) {
+      width: 70%;
+    }
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    margin: 12px 0 4px 0;
+  }
+
+  .botoncomprar {
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 35px 0;
+  
+    a {
+      @extend %boton;
+  
+      &:hover {
+        transform: scale(1.03);
+        color: $color-secundario;
+      }
+    }
+  }
+}
+
+.botonvolverarriba {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0 35px 0;
+
+  a {
+    @extend %boton;
+    &:hover {
+      transform: scale(1.03);
+      color: $color-secundario;
+    }
+  }
+}
+
+/* FIN SECCION DISCOGRAFIA */

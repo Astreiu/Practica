@@ -1,0 +1,97 @@
+@import "../base/variables";
+
+/* SECCION HISTORIA */
+
+.historia-arriba {
+  margin: auto;
+  padding: 35px 0 25px;
+  color: black;
+  font-family: $font-titulos;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+
+  @media only screen and (max-width: 620px) {
+    width: 90%;
+  }
+
+  .imagenhistoria {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .historia-titulo {
+    margin: 40px 60px;
+    font-family: $font-titulos;
+    font-size: 40px;
+    @media only screen and (max-width: 800px) {
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+
+    @media only screen and (max-width: 400px) {
+      font-size: 1rem;
+      font-weight: bolder;
+    }
+  }
+
+  p {
+    margin: 0px 60px;
+    font-family: $font-textos;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: justify;
+    @media only screen and (max-width: 800px) {
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
+.historia-abajo {
+  margin: auto;
+  padding: 35px 0 25px;
+  color: black;
+  font-family: $font-titulos;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+
+  @media only screen and (max-width: 620px) {
+    width: 90%;
+  }
+
+  .imagenhistoria-2 {
+    object-fit: cover;
+    width: 100%;
+    @media only screen and (max-width: 620px) {
+      padding-bottom: 5rem;
+    }
+  }
+
+  p {
+    margin: 0px 60px;
+    font-family: $font-textos;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: justify;
+    @media only screen and (max-width: 800px) {
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
+/* FIN SECCION HISTORIA */

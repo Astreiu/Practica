@@ -1,3 +1,21 @@
-body {
-    
+* {
+  margin: 0;
+  padding: 0;
 }
+
+/* tipografias - familia tipográfica: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* Imports archivos */
+@import "base/variables";
+@import "components/header";
+@import "components/inicio";
+@import "components/historia";
+@import "components/discografia";
+@import "components/galeria";
+@import "components/contacto";
+@import "components/footer";
+@import "base/mixins";
+@import "base/mapas";
+@import "base/extends";

@@ -1,0 +1,88 @@
+
+/* FOOTER */
+
+.footer-container{
+    background-color: black;
+    .footer-grid{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    
+        @media only screen and (max-width: 980px){
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        div{
+            display: flex;
+            align-items: center;
+        }
+        
+        .logoalternativo{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 160px;
+                @media only screen and (max-width: 980px){
+                    width: 100px;
+                    margin: 22px 0px 15px 0;
+                }
+            }
+        }
+
+        .ubicacion{
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 40px;
+        
+            @media only screen and (max-width: 980px){
+                display: flex;
+                justify-content: center;
+                padding: 0px;
+            }  
+            .p-copyright{
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                color: white;
+                margin-bottom: 0px;
+            
+                @media only screen and (max-width: 1100px){
+                    font-size: 18px;
+                }
+
+                @media only screen and (max-width: 768px){
+                    font-size: 16px;
+                }
+            }
+        }
+        
+        .redes{
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 40px;    
+
+            @media only screen and (max-width: 980px){
+                display: flex;
+                justify-content: center;
+                padding: 0px;
+            }
+        
+            @media only screen and (max-width: 400px){
+                a {
+                    img {
+                        width: 35px;
+                    }
+                }
+            }
+        a {
+            img:hover{
+                transform: scale(1.13);
+                transition: 0.3s;
+            }  
+        }
+        }    
+    }
+}
+
+/* FIN FOOTER */

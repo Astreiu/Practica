@@ -20,12 +20,12 @@
     text-align: center;
 
     @media only screen and (max-width: 800px) {
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: bolder;
     }
 
     @media only screen and (max-width: 400px) {
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-weight: bolder;
     }
   }
@@ -41,21 +41,6 @@
     transition: 0.3s;
     &:hover {
       @include animacion(scale(1.03));
-      color: black;
-      color: white;
-    }
-    @media only screen and (max-width: 400px) {
-    text-decoration: none;
-    padding: 6px 10px;
-    background-color: $bg-color-principal;
-    font-family: $font-textos;
-    font-weight: 200;
-    color: white;
-    font-size: 12px;
-    margin: 12px 0 60px 0;
-    transition: 0.3s;
-    &:hover {
-      @include animacion(scale(0.93));
       color: black;
       color: white;
     }

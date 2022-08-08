@@ -11,15 +11,6 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-
-  @media only screen and (max-width: 990px) {
-      height: 40vh;
-    }
-  
-    @media only screen and (max-width: 400px) {
-      height: 20vh;
-    }
-
   .textoimagen {
     margin-bottom: 20px;
     padding: 50px 0 25px;
@@ -50,6 +41,21 @@
     transition: 0.3s;
     &:hover {
       @include animacion(scale(1.03));
+      color: black;
+      color: white;
+    }
+    @media only screen and (max-width: 400px) {
+    text-decoration: none;
+    padding: 6px 10px;
+    background-color: $bg-color-principal;
+    font-family: $font-textos;
+    font-weight: 200;
+    color: white;
+    font-size: 12px;
+    margin: 12px 0 60px 0;
+    transition: 0.3s;
+    &:hover {
+      @include animacion(scale(0.93));
       color: black;
       color: white;
     }

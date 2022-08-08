@@ -2,6 +2,8 @@
 @import "../base/mixins";
 @import "../base/mapas";
 
+/* SECCION CONTACTO */
+
 .contacto {
   .contacto-titulo {
     margin-bottom: 20px;
@@ -43,7 +45,7 @@
 }
 
 .formulario-contacto {
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 380px) {
     background-color: map-get($premium, fondo-premium);
   }
     .datos-contacto {
@@ -89,3 +91,5 @@
       color: $color-secundario;
     }
   }
+
+  /* FIN SECCION CONTACTO */

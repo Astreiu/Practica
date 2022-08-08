@@ -1,7 +1,9 @@
 @import "../base/variables";
 
-.maincatalogo {
-  .catalogo {
+/* SECCION GALERIA */
+
+.maingaleria {
+  .galeria {
     .galeria-titulo {
       margin-bottom: 20px;
       padding: 50px 0 25px;
@@ -41,6 +43,13 @@
   }
 }
 
+.grid-galeria {
+  .imagenexpand:hover {
+    transition: 0.7s;
+    transform: scale(2);
+  }
+}
+
 .botonvolverarriba {
   display: flex;
   justify-content: center;
@@ -54,3 +63,5 @@
     }
   }
 }
+
+/* FIN SECCION GALERIA */

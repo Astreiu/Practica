@@ -7,6 +7,7 @@
 
 /* tipografias - familia tipográfica: 'Roboto', sans-serif; */
 /* Imports archivos */
+/* HEADER */
 .cabecera {
   background-color: black;
 }
@@ -70,7 +71,8 @@
   color: #5dc1b9;
 }
 
-/* INICIO */
+/* FIN HEADER */
+/* SECCION INICIO */
 .hero {
   background-image: url(../multimedia/images/sonatafondo.png);
   background-size: cover;
@@ -193,6 +195,8 @@
   color: #5dc1b9;
 }
 
+/* FIN SECCION INICIO */
+/* SECCION HISTORIA */
 .historia-arriba {
   margin: auto;
   padding: 35px 0 25px;
@@ -293,6 +297,8 @@
   }
 }
 
+/* FIN SECCION HISTORIA */
+/* SECCION DISCOGRAFIA */
 .maincatalogo .catalogo .discografia-titulo {
   margin-bottom: 20px;
   padding: 50px 0 25px;
@@ -378,7 +384,9 @@
   color: #5dc1b9;
 }
 
-.maincatalogo .catalogo .galeria-titulo {
+/* FIN SECCION DISCOGRAFIA */
+/* SECCION GALERIA */
+.maingaleria .galeria .galeria-titulo {
   margin-bottom: 20px;
   padding: 50px 0 25px;
   color: black;
@@ -387,18 +395,18 @@
   text-align: center;
 }
 @media only screen and (max-width: 800px) {
-  .maincatalogo .catalogo .galeria-titulo {
+  .maingaleria .galeria .galeria-titulo {
     font-size: 2rem;
     font-weight: bolder;
   }
 }
 @media only screen and (max-width: 400px) {
-  .maincatalogo .catalogo .galeria-titulo {
+  .maingaleria .galeria .galeria-titulo {
     font-size: 1rem;
     font-weight: bolder;
   }
 }
-.maincatalogo .catalogo p {
+.maingaleria .galeria p {
   margin: 0px 60px;
   padding: 25px;
   font-family: "Roboto", sans-serif;
@@ -408,16 +416,21 @@
   text-align: center;
 }
 @media only screen and (max-width: 800px) {
-  .maincatalogo .catalogo p {
+  .maingaleria .galeria p {
     font-size: 16px;
     line-height: 25px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .maincatalogo .catalogo p {
+  .maingaleria .galeria p {
     font-size: 12px;
     line-height: 20px;
   }
+}
+
+.grid-galeria .imagenexpand:hover {
+  transition: 0.7s;
+  transform: scale(2);
 }
 
 .botonvolverarriba {
@@ -430,6 +443,8 @@
   color: #5dc1b9;
 }
 
+/* FIN SECCION GALERIA */
+/* SECCION CONTACTO */
 .contacto .contacto-titulo {
   margin-bottom: 20px;
   padding: 50px 0 25px;
@@ -472,7 +487,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 380px) {
   .formulario-contacto {
     background-color: rgba(0, 0, 0, 0.5);
   }
@@ -514,6 +529,8 @@
   color: #5dc1b9;
 }
 
+/* FIN SECCION CONTACTO */
+/* FOOTER */
 .footer-container {
   background-color: black;
 }
@@ -596,6 +613,7 @@
   transition: 0.3s;
 }
 
+/* FIN FOOTER */
 /* BOTONES */
 .botonvolverarriba a, .grid-catalogo-items .botoncomprar a {
   text-decoration: none;

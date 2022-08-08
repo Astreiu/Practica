@@ -29,11 +29,11 @@
     text-align: center;
 
     @media only screen and (max-width: 800px) {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
 
     @media only screen and (max-width: 450px) {
-      font-size: 0.8rem;
+      font-size: 1.2rem;
     }
   }
   .boton {
@@ -43,16 +43,16 @@
     font-family: $font-textos;
     font-weight: 300;
     color: white;
-    font-size: 23px;
+    font-size: 24px;
     margin: 25px 0 120px 0;
     transition: 0.3s;
 
     @media only screen and (max-width: 800px) {
-      font-size: 18px;
+      font-size: 16px;
     }
   
     @media only screen and (max-width: 450px) {
-      font-size: 16px;
+      font-size: 14px;
     }
 
     &:hover {

@@ -100,12 +100,12 @@
 }
 @media only screen and (max-width: 800px) {
   .hero .textoimagen {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 450px) {
   .hero .textoimagen {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 }
 .hero .boton {
@@ -115,18 +115,18 @@
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: white;
-  font-size: 23px;
+  font-size: 24px;
   margin: 25px 0 120px 0;
   transition: 0.3s;
 }
 @media only screen and (max-width: 800px) {
   .hero .boton {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 450px) {
   .hero .boton {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 .hero .boton:hover {
@@ -206,11 +206,6 @@
   object-fit: cover;
   width: 100%;
 }
-@media only screen and (max-width: 480px) {
-  .historia-arriba .imagenhistoria {
-    width: 80%;
-  }
-}
 .historia-arriba .historia-titulo {
   margin: 40px 60px;
   font-family: "Roboto", sans-serif;
@@ -264,7 +259,6 @@
 }
 @media only screen and (max-width: 990px) {
   .historia-abajo .imagenhistoria-2 {
-    width: 80%;
     padding-bottom: 5rem;
   }
 }

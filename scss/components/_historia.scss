@@ -13,7 +13,6 @@
     object-fit: cover;
     width: 100%;
     @media only screen and (max-width: 480px) {
-      width: 80%;
     }
   }
 
@@ -64,7 +63,6 @@
     object-fit: cover;
     width: 100%;
     @media only screen and (max-width: 990px) {
-      width: 80%;
       padding-bottom: 5rem;
     }
   }

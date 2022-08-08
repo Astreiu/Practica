@@ -487,7 +487,7 @@
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 330px) {
   .formulario-contacto {
     background-color: rgba(0, 0, 0, 0.5);
   }

@@ -202,6 +202,11 @@
   text-align: center;
   width: 100%;
 }
+@media only screen and (max-width: 620px) {
+  .historia-arriba {
+    width: 90%;
+  }
+}
 .historia-arriba .imagenhistoria {
   object-fit: cover;
   width: 100%;
@@ -253,11 +258,16 @@
   text-align: center;
   width: 100%;
 }
+@media only screen and (max-width: 620px) {
+  .historia-abajo {
+    width: 90%;
+  }
+}
 .historia-abajo .imagenhistoria-2 {
   object-fit: cover;
   width: 100%;
 }
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 620px) {
   .historia-abajo .imagenhistoria-2 {
     padding-bottom: 5rem;
   }

@@ -9,11 +9,13 @@
   text-align: center;
   width: 100%;
 
+  @media only screen and (max-width: 620px) {
+    width: 90%;
+  }
+
   .imagenhistoria {
     object-fit: cover;
     width: 100%;
-    @media only screen and (max-width: 480px) {
-    }
   }
 
   .historia-titulo {
@@ -59,10 +61,14 @@
   text-align: center;
   width: 100%;
 
+  @media only screen and (max-width: 620px) {
+    width: 90%;
+  }
+
   .imagenhistoria-2 {
     object-fit: cover;
     width: 100%;
-    @media only screen and (max-width: 990px) {
+    @media only screen and (max-width: 620px) {
       padding-bottom: 5rem;
     }
   }

@@ -6,7 +6,8 @@
     .footer-grid{
         display: flex;
         justify-content: center;
-        width: 100%;
+        margin-top: 10px;
+        padding-top: 12px;
     
         @media only screen and (max-width: 980px){
             display: flex;
@@ -42,17 +43,17 @@
             }  
             .p-copyright{
                 font-family: 'Roboto', sans-serif;
-                font-size: 2rem;
+                font-size: 1.2rem;
                 font-weight: 300;
                 color: white;
                 margin-bottom: 0px;
             
                 @media only screen and (max-width: 1100px){
-                    font-size: 1.8rem;
+                    font-size: 1rem;
                 }
 
                 @media only screen and (max-width: 768px){
-                    font-size: 1.5rem;
+                    font-size: 0.8rem;
                 }
             }
         }

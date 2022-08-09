@@ -1,64 +1,87 @@
 @import "../base/variables";
+@import "../base/extends";
 
 /* SECCION GALERIA */
 
 .maingaleria {
+  padding: 24px;
+  @media only screen and (max-width: 596px) {
+    padding: 2px;
+  }
   .galeria {
     .galeria-titulo {
       margin-bottom: 20px;
       padding: 50px 0 25px;
       color: black;
       font-family: $font-titulos;
-      font-size: 2.5rem;
+      font-size: 2rem;
       text-align: center;
 
-      @media only screen and (max-width: 800px) {
-        font-size: 2rem;
+      @media only screen and (max-width: 768px) {
+        font-size: 1.8rem;
         font-weight: bolder;
       }
 
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 576px) {
         font-size: 1.5rem;
         font-weight: bolder;
       }
     }
-    p {
-      margin: 0px 60px;
-      padding: 25px;
+    .galeria-texto {
+      padding: 25px 10px;
       font-family: $font-textos;
-      font-size: 2rem;
-      font-weight: 300;
+      font-size: 1.8rem;
       line-height: 35px;
       text-align: center;
-      @media only screen and (max-width: 800px) {
-        font-size: 1.8rem;
-        line-height: 25px;
+      @media only screen and (max-width: 768px) {
+        font-size: 1.5rem;
       }
 
-      @media only screen and (max-width: 400px) {
-        font-size: 1.5rem;
-        line-height: 20px;
+      @media only screen and (max-width: 576px) {
+        font-size: 1.2rem;
       }
     }
   }
-}
 
-.grid-galeria {
-  .grid-catalogo-items {
+  .grid-galeria-items {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 12px;
+
+    img {
+      width: 85%;
+      padding: 24px;
     
-    .imagenexpand:hover {
-      transition: 0.7s;
-      transform: scale(2);
-      @media only screen and (max-width: 800px) {
-        transform: scale(1.5);
-      }
+    @media only screen and (max-width: 768px) {
+      width: 80%;
+      padding: 20px;
+    }
       
-      @media only screen and (max-width: 400px) {
-        transform: scale(1.2);
+    @media only screen and (max-width: 596px) {
+      width: 75%;
+      padding: 16px;
+    }
+
+    @media only screen and (max-width: 500px) {
+      width: 70%;
+      padding: 12px;
+    }
+      &:hover {
+        transition: 0.7s;
+        transform: scale(1.15);
       }
+    }
+    @media only screen and (max-width: 768px) {
+        transform: scale(1.10);
+    }
+      
+    @media only screen and (max-width: 576px) {
+        transform: scale(1.05);
+    }
+
+    @media only screen and (max-width: 500px) {
+        transform: scale(1);
     }
   }
 }

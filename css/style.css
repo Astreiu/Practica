@@ -97,17 +97,17 @@
   padding: 50px 0 25px;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 @media only screen and (max-width: 800px) {
   .hero .textoimagen {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (max-width: 450px) {
   .hero .textoimagen {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 .hero .boton {
@@ -145,7 +145,7 @@
   padding: 50px 0 25px;
   color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 @media only screen and (max-width: 800px) {
@@ -156,27 +156,27 @@
 }
 @media only screen and (max-width: 400px) {
   .section-carousel .inicio-titulo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
   }
 }
 .section-carousel p {
   margin: 0px 60px;
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 300;
-  line-height: 35px;
+  line-height: 2rem;
   text-align: justify;
 }
 @media only screen and (max-width: 800px) {
   .section-carousel p {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 25px;
   }
 }
 @media only screen and (max-width: 400px) {
   .section-carousel p {
-    font-size: 14px;
+    font-size: 1.5rem;
     line-height: 20px;
   }
 }
@@ -218,7 +218,7 @@
 .historia-arriba .historia-titulo {
   margin: 40px 60px;
   font-family: "Roboto", sans-serif;
-  font-size: 40px;
+  font-size: 3rem;
 }
 @media only screen and (max-width: 800px) {
   .historia-arriba .historia-titulo {
@@ -228,27 +228,27 @@
 }
 @media only screen and (max-width: 400px) {
   .historia-arriba .historia-titulo {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bolder;
   }
 }
 .historia-arriba p {
   margin: 0px 60px;
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 35px;
   text-align: justify;
 }
 @media only screen and (max-width: 800px) {
   .historia-arriba p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 25px;
   }
 }
 @media only screen and (max-width: 400px) {
   .historia-arriba p {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 20px;
   }
 }
@@ -279,97 +279,106 @@
 .historia-abajo p {
   margin: 0px 60px;
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 300;
-  line-height: 35px;
+  line-height: 2rem;
   text-align: justify;
 }
 @media only screen and (max-width: 800px) {
   .historia-abajo p {
-    font-size: 16px;
+    font-size: 1.8rem;
     line-height: 25px;
   }
 }
 @media only screen and (max-width: 400px) {
   .historia-abajo p {
-    font-size: 12px;
+    font-size: 1.5rem;
     line-height: 20px;
   }
 }
 
 /* FIN SECCION HISTORIA */
 /* SECCION DISCOGRAFIA */
-.maincatalogo .catalogo .discografia-titulo {
+.discografia .discografia-lista .discografia-titulo {
   margin-bottom: 20px;
   padding: 50px 0 25px;
   color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 @media only screen and (max-width: 800px) {
-  .maincatalogo .catalogo .discografia-titulo {
+  .discografia .discografia-lista .discografia-titulo {
     font-size: 2rem;
     font-weight: bolder;
   }
 }
 @media only screen and (max-width: 400px) {
-  .maincatalogo .catalogo .discografia-titulo {
-    font-size: 1rem;
+  .discografia .discografia-lista .discografia-titulo {
+    font-size: 1.5rem;
     font-weight: bolder;
   }
 }
-.maincatalogo .catalogo p {
+.discografia .discografia-lista p {
   margin: 0px 60px;
   padding: 25px;
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 300;
-  line-height: 35px;
+  line-height: 2rem;
   text-align: center;
 }
 @media only screen and (max-width: 800px) {
-  .maincatalogo .catalogo p {
-    font-size: 16px;
+  .discografia .discografia-lista p {
+    font-size: 1.8rem;
     line-height: 25px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .maincatalogo .catalogo p {
-    font-size: 12px;
+  .discografia .discografia-lista p {
+    font-size: 1.5rem;
     line-height: 20px;
   }
 }
-
-.grid-catalogo-items {
+.discografia .grid-discografia-items {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Roboto", sans-serif;
   margin: 22px 0;
 }
-.grid-catalogo-items img {
+.discografia .grid-discografia-items img {
   width: 85%;
   transition: 0.2s;
 }
 @media only screen and (max-width: 991px) {
-  .grid-catalogo-items img {
+  .discografia .grid-discografia-items img {
     width: 70%;
   }
 }
-.grid-catalogo-items img:hover {
+.discografia .grid-discografia-items img:hover {
   transform: scale(1.01);
 }
-.grid-catalogo-items h3 {
-  font-size: 20px;
+.discografia .grid-discografia-items h3 {
+  font-size: 2.2rem;
   margin: 12px 0 4px 0;
 }
-.grid-catalogo-items .botoncomprar {
+@media only screen and (max-width: 800px) {
+  .discografia .grid-discografia-items h3 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .discografia .grid-discografia-items h3 {
+    font-size: 1.5rem;
+  }
+}
+.discografia .grid-discografia-items .botoncomprar {
   display: flex;
   justify-content: center;
   margin: 35px 0 35px 0;
 }
-.grid-catalogo-items .botoncomprar a:hover {
+.discografia .grid-discografia-items .botoncomprar a:hover {
   transform: scale(1.03);
   color: #5dc1b9;
 }
@@ -385,57 +394,117 @@
 }
 
 /* FIN SECCION DISCOGRAFIA */
+/* BOTONES */
+.botonvolverarriba a, .discografia .grid-discografia-items .botoncomprar a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 20px;
+  transition: 0.2s;
+}
+@media only screen and (max-width: 400px) {
+  .botonvolverarriba a, .discografia .grid-discografia-items .botoncomprar a {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+}
+
+/* FIN BOTONES */
 /* SECCION GALERIA */
+.maingaleria {
+  padding: 24px;
+}
+@media only screen and (max-width: 596px) {
+  .maingaleria {
+    padding: 2px;
+  }
+}
 .maingaleria .galeria .galeria-titulo {
   margin-bottom: 20px;
   padding: 50px 0 25px;
   color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .maingaleria .galeria .galeria-titulo {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bolder;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 576px) {
   .maingaleria .galeria .galeria-titulo {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bolder;
   }
 }
-.maingaleria .galeria p {
-  margin: 0px 60px;
-  padding: 25px;
+.maingaleria .galeria .galeria-texto {
+  padding: 25px 10px;
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  font-weight: 300;
+  font-size: 1.8rem;
   line-height: 35px;
   text-align: center;
 }
-@media only screen and (max-width: 800px) {
-  .maingaleria .galeria p {
-    font-size: 16px;
-    line-height: 25px;
+@media only screen and (max-width: 768px) {
+  .maingaleria .galeria .galeria-texto {
+    font-size: 1.5rem;
   }
 }
-@media only screen and (max-width: 400px) {
-  .maingaleria .galeria p {
-    font-size: 12px;
-    line-height: 20px;
+@media only screen and (max-width: 576px) {
+  .maingaleria .galeria .galeria-texto {
+    font-size: 1.2rem;
   }
 }
-
-.grid-galeria .grid-catalogo-items {
+.maingaleria .grid-galeria-items {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 12px;
 }
-.grid-galeria .grid-catalogo-items .imagenexpand:hover {
+.maingaleria .grid-galeria-items img {
+  width: 85%;
+  padding: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .maingaleria .grid-galeria-items img {
+    width: 80%;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 596px) {
+  .maingaleria .grid-galeria-items img {
+    width: 75%;
+    padding: 16px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .maingaleria .grid-galeria-items img {
+    width: 70%;
+    padding: 12px;
+  }
+}
+.maingaleria .grid-galeria-items img:hover {
   transition: 0.7s;
-  transform: scale(2);
+  transform: scale(1.15);
+}
+@media only screen and (max-width: 768px) {
+  .maingaleria .grid-galeria-items {
+    transform: scale(1.1);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .maingaleria .grid-galeria-items {
+    transform: scale(1.05);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .maingaleria .grid-galeria-items {
+    transform: scale(1);
+  }
 }
 
 .botonvolverarriba {
@@ -455,7 +524,7 @@
   padding: 50px 0 25px;
   color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 @media only screen and (max-width: 800px) {
@@ -466,7 +535,7 @@
 }
 @media only screen and (max-width: 400px) {
   .contacto .contacto-titulo {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bolder;
   }
 }
@@ -474,20 +543,20 @@
   margin: 0px 60px;
   padding: 25px;
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 35px;
   text-align: center;
 }
 @media only screen and (max-width: 800px) {
   .contacto p {
-    font-size: 16px;
+    font-size: 1.8rem;
     line-height: 25px;
   }
 }
 @media only screen and (max-width: 400px) {
   .contacto p {
-    font-size: 12px;
+    font-size: 1.5rem;
     line-height: 20px;
   }
 }
@@ -510,17 +579,17 @@
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: black;
-  font-size: 19px;
+  font-size: 2rem;
   margin: 0px;
 }
 @media only screen and (max-width: 800px) {
   .formulario-contacto .datos-contacto p {
-    font-size: 16px;
+    font-size: 1.8rem;
   }
 }
 @media only screen and (max-width: 400px) {
   .formulario-contacto .datos-contacto p {
-    font-size: 14px;
+    font-size: 1.5rem;
   }
 }
 .formulario-contacto .datos-contacto img {
@@ -552,7 +621,8 @@
 .footer-container .footer-grid {
   display: flex;
   justify-content: center;
-  width: 100%;
+  margin-top: 10px;
+  padding-top: 12px;
 }
 @media only screen and (max-width: 980px) {
   .footer-container .footer-grid {
@@ -591,19 +661,19 @@
 }
 .footer-container .footer-grid .ubicacion .p-copyright {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 300;
   color: white;
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 1100px) {
   .footer-container .footer-grid .ubicacion .p-copyright {
-    font-size: 18px;
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .footer-container .footer-grid .ubicacion .p-copyright {
-    font-size: 14px;
+    font-size: 0.8rem;
   }
 }
 .footer-container .footer-grid .redes {
@@ -630,7 +700,7 @@
 
 /* FIN FOOTER */
 /* BOTONES */
-.botonvolverarriba a, .grid-catalogo-items .botoncomprar a {
+.botonvolverarriba a, .discografia .grid-discografia-items .botoncomprar a {
   text-decoration: none;
   padding: 10px 20px;
   background-color: black;
@@ -641,7 +711,7 @@
   transition: 0.2s;
 }
 @media only screen and (max-width: 400px) {
-  .botonvolverarriba a, .grid-catalogo-items .botoncomprar a {
+  .botonvolverarriba a, .discografia .grid-discografia-items .botoncomprar a {
     font-size: 1rem;
     font-weight: bolder;
   }

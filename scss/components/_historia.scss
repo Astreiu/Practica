@@ -7,7 +7,6 @@
   padding: 35px 0 25px;
   color: black;
   font-family: $font-titulos;
-  font-size: 40px;
   text-align: center;
   width: 100%;
 
@@ -23,13 +22,14 @@
   .historia-titulo {
     margin: 40px 60px;
     font-family: $font-titulos;
-    font-size: 3rem;
-    @media only screen and (max-width: 800px) {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    @media only screen and (max-width: 768px) {
       font-size: 2rem;
       font-weight: bolder;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 576px) {
       font-size: 1.5rem;
       font-weight: bolder;
     }
@@ -38,18 +38,16 @@
   p {
     margin: 0px 60px;
     font-family: $font-textos;
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 300;
-    line-height: 35px;
+    line-height: 2rem;
     text-align: justify;
-    @media only screen and (max-width: 800px) {
-      font-size: 20px;
-      line-height: 25px;
+    @media only screen and (max-width: 768px) {
+      font-size: 1.5rem;
     }
 
-    @media only screen and (max-width: 400px) {
-      font-size: 18px;
-      line-height: 20px;
+    @media only screen and (max-width: 576px) {
+      font-size: 1rem;
     }
   }
 }
@@ -59,7 +57,6 @@
   padding: 35px 0 25px;
   color: black;
   font-family: $font-titulos;
-  font-size: 40px;
   text-align: center;
   width: 100%;
 
@@ -70,7 +67,7 @@
   .imagenhistoria-2 {
     object-fit: cover;
     width: 100%;
-    @media only screen and (max-width: 620px) {
+    @media only screen and (max-width: 991px) {
       padding-bottom: 5rem;
     }
   }
@@ -78,17 +75,17 @@
   p {
     margin: 0px 60px;
     font-family: $font-textos;
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 300;
     line-height: 2rem;
     text-align: justify;
-    @media only screen and (max-width: 800px) {
-      font-size: 1.8rem;
+    @media only screen and (max-width: 768px) {
+      font-size: 1.5rem;
       line-height: 25px;
     }
 
-    @media only screen and (max-width: 400px) {
-      font-size: 1.5rem;
+    @media only screen and (max-width: 576px) {
+      font-size: 1rem;
       line-height: 20px;
     }
   }

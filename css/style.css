@@ -82,12 +82,12 @@
   justify-content: flex-end;
   align-items: center;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 992px) {
   .hero {
     height: 30rem;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 576px) {
   .hero {
     height: 20rem;
   }
@@ -97,17 +97,20 @@
   padding: 50px 0 25px;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 300;
   text-align: center;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 992px) {
   .hero .textoimagen {
-    font-size: 1.5rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 576px) {
   .hero .textoimagen {
-    font-size: 1.2rem;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
   }
 }
 .hero .boton {
@@ -123,11 +126,13 @@
 }
 @media only screen and (max-width: 800px) {
   .hero .boton {
+    margin: 0;
     font-size: 16px;
   }
 }
 @media only screen and (max-width: 450px) {
   .hero .boton {
+    margin: 0;
     font-size: 14px;
   }
 }
@@ -145,7 +150,8 @@
   padding: 50px 0 25px;
   color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: bolder;
   text-align: center;
 }
 @media only screen and (max-width: 800px) {
@@ -156,27 +162,26 @@
 }
 @media only screen and (max-width: 400px) {
   .section-carousel .inicio-titulo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
   }
 }
 .section-carousel p {
   margin: 0px 60px;
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 35px;
+  font-size: 24px;
+  line-height: 2rem;
   text-align: justify;
 }
 @media only screen and (max-width: 800px) {
   .section-carousel p {
-    font-size: 18px;
+    font-size: 1.5rem;
     line-height: 25px;
   }
 }
 @media only screen and (max-width: 400px) {
   .section-carousel p {
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 20px;
   }
 }
@@ -202,7 +207,6 @@
   padding: 35px 0 25px;
   color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 40px;
   text-align: center;
   width: 100%;
 }
@@ -218,38 +222,37 @@
 .historia-arriba .historia-titulo {
   margin: 40px 60px;
   font-family: "Roboto", sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
+  font-weight: bolder;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .historia-arriba .historia-titulo {
     font-size: 2rem;
     font-weight: bolder;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 576px) {
   .historia-arriba .historia-titulo {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bolder;
   }
 }
 .historia-arriba p {
   margin: 0px 60px;
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 2rem;
   font-weight: 300;
-  line-height: 35px;
+  line-height: 2rem;
   text-align: justify;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .historia-arriba p {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 1.5rem;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 576px) {
   .historia-arriba p {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 1rem;
   }
 }
 
@@ -258,7 +261,6 @@
   padding: 35px 0 25px;
   color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 40px;
   text-align: center;
   width: 100%;
 }
@@ -271,7 +273,7 @@
   object-fit: cover;
   width: 100%;
 }
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 991px) {
   .historia-abajo .imagenhistoria-2 {
     padding-bottom: 5rem;
   }
@@ -279,20 +281,20 @@
 .historia-abajo p {
   margin: 0px 60px;
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 2rem;
   font-weight: 300;
-  line-height: 35px;
+  line-height: 2rem;
   text-align: justify;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .historia-abajo p {
-    font-size: 16px;
+    font-size: 1.5rem;
     line-height: 25px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 576px) {
   .historia-abajo p {
-    font-size: 12px;
+    font-size: 1rem;
     line-height: 20px;
   }
 }
@@ -304,18 +306,18 @@
   padding: 50px 0 25px;
   color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .maincatalogo .catalogo .discografia-titulo {
     font-size: 2rem;
     font-weight: bolder;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 576px) {
   .maincatalogo .catalogo .discografia-titulo {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bolder;
   }
 }
@@ -325,18 +327,18 @@
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 300;
-  line-height: 35px;
+  line-height: 2rem;
   text-align: center;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .maincatalogo .catalogo p {
-    font-size: 16px;
+    font-size: 1.5rem;
     line-height: 25px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 576px) {
   .maincatalogo .catalogo p {
-    font-size: 12px;
+    font-size: 1rem;
     line-height: 20px;
   }
 }
@@ -361,8 +363,18 @@
   transform: scale(1.01);
 }
 .grid-catalogo-items h3 {
-  font-size: 20px;
+  font-size: 2rem;
   margin: 12px 0 4px 0;
+}
+@media only screen and (max-width: 768px) {
+  .grid-catalogo-items h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .grid-catalogo-items h3 {
+    font-size: 1rem;
+  }
 }
 .grid-catalogo-items .botoncomprar {
   display: flex;
@@ -391,18 +403,18 @@
   padding: 50px 0 25px;
   color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .maingaleria .galeria .galeria-titulo {
     font-size: 2rem;
     font-weight: bolder;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 576px) {
   .maingaleria .galeria .galeria-titulo {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bolder;
   }
 }
@@ -410,20 +422,20 @@
   margin: 0px 60px;
   padding: 25px;
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 35px;
   text-align: center;
 }
 @media only screen and (max-width: 800px) {
   .maingaleria .galeria p {
-    font-size: 16px;
+    font-size: 1.8rem;
     line-height: 25px;
   }
 }
 @media only screen and (max-width: 400px) {
   .maingaleria .galeria p {
-    font-size: 12px;
+    font-size: 1.5rem;
     line-height: 20px;
   }
 }
@@ -436,6 +448,16 @@
 .grid-galeria .grid-catalogo-items .imagenexpand:hover {
   transition: 0.7s;
   transform: scale(2);
+}
+@media only screen and (max-width: 800px) {
+  .grid-galeria .grid-catalogo-items .imagenexpand:hover {
+    transform: scale(1.5);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .grid-galeria .grid-catalogo-items .imagenexpand:hover {
+    transform: scale(1.2);
+  }
 }
 
 .botonvolverarriba {
@@ -455,7 +477,7 @@
   padding: 50px 0 25px;
   color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 @media only screen and (max-width: 800px) {
@@ -466,7 +488,7 @@
 }
 @media only screen and (max-width: 400px) {
   .contacto .contacto-titulo {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bolder;
   }
 }
@@ -474,20 +496,20 @@
   margin: 0px 60px;
   padding: 25px;
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 35px;
   text-align: center;
 }
 @media only screen and (max-width: 800px) {
   .contacto p {
-    font-size: 16px;
+    font-size: 1.8rem;
     line-height: 25px;
   }
 }
 @media only screen and (max-width: 400px) {
   .contacto p {
-    font-size: 12px;
+    font-size: 1.5rem;
     line-height: 20px;
   }
 }
@@ -510,17 +532,12 @@
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: black;
-  font-size: 19px;
+  font-size: 1rem;
   margin: 0px;
 }
 @media only screen and (max-width: 800px) {
   .formulario-contacto .datos-contacto p {
-    font-size: 16px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .formulario-contacto .datos-contacto p {
-    font-size: 14px;
+    font-size: 0.8rem;
   }
 }
 .formulario-contacto .datos-contacto img {
@@ -591,19 +608,19 @@
 }
 .footer-container .footer-grid .ubicacion .p-copyright {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 300;
   color: white;
   margin-bottom: 0px;
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 992px) {
   .footer-container .footer-grid .ubicacion .p-copyright {
-    font-size: 18px;
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .footer-container .footer-grid .ubicacion .p-copyright {
-    font-size: 14px;
+    font-size: 0.8rem;
   }
 }
 .footer-container .footer-grid .redes {

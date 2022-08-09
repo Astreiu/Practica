@@ -42,17 +42,17 @@
             }  
             .p-copyright{
                 font-family: 'Roboto', sans-serif;
-                font-size: 1.5rem;
+                font-size: 1rem;
                 font-weight: 300;
                 color: white;
                 margin-bottom: 0px;
             
                 @media only screen and (max-width: 992px){
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                 }
 
                 @media only screen and (max-width: 768px){
-                    font-size: 0.8rem;
+                    font-size: 0.6rem;
                 }
             }
         }

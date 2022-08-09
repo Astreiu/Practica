@@ -74,7 +74,7 @@
 /* FIN HEADER */
 /* SECCION INICIO */
 .hero {
-  background-image: url(../multimedia/images/sonatafondo.png);
+  background-image: url(../multimedia/images/sonatafondo.jpeg);
   background-size: cover;
   height: 50rem;
   display: flex;
@@ -84,12 +84,12 @@
 }
 @media only screen and (max-width: 992px) {
   .hero {
-    height: 30rem;
+    height: 20rem;
   }
 }
 @media only screen and (max-width: 576px) {
   .hero {
-    height: 20rem;
+    height: 15rem;
   }
 }
 .hero .textoimagen {
@@ -124,15 +124,21 @@
   margin: 25px 0 120px 0;
   transition: 0.3s;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 992px) {
   .hero .boton {
     margin-bottom: 60px;
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 576px) {
   .hero .boton {
     margin-bottom: 30px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .hero .boton {
+    margin-bottom: 15px;
     font-size: 14px;
   }
 }
@@ -188,6 +194,7 @@
 .section-carousel img {
   padding: 50px 0 25px;
   object-fit: cover;
+  width: 100%;
 }
 
 .botonvolverarriba {
